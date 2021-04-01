@@ -1,0 +1,15 @@
+.link {
+    display: inline-block;
+    font-size: 0.875em;
+    color: $dark;
+
+    .icon {
+        margin-left: 10px;
+    }
+}
+
+.mail-link {
+    color: $dark;
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,0 +1,19 @@
+.dropdown-menu {
+    font-size: 0.875em;
+    left: unset;
+    right: 0;
+
+    .dropdown-item {
+        position: relative;
+        padding-right: 2rem;
+
+        &:active {
+            background-color: $grey;
+            color: $dark;
+        }
+
+        .icon {
+            margin-left: 10px;
+        }
+    }
+}

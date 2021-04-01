@@ -1,0 +1,49 @@
+.sub-footer-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @include media-breakpoint-down(lg) {
+        display: block;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    li {
+        @include media-breakpoint-down(lg) {
+            border-top: 1px solid $silver;
+            width: 100%;
+
+            &:last-child {
+                border-bottom: 1px solid $silver;
+            }
+        }
+
+        a {
+            padding: 0;
+            font-size: 0.75em;
+            color: $dark;
+            text-decoration: none;
+
+            @include media-breakpoint-down(lg) {
+                padding: 10px 15px;
+                display: block;
+            }
+        }
+
+        + li {
+            margin-left: 2rem;
+            @include media-breakpoint-down(lg) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.copy {
+    font-size: 0.75em;
+    @include media-breakpoint-down(lg) {
+        margin-top: 1rem;
+    }
+}

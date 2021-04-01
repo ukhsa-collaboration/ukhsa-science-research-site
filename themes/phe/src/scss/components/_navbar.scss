@@ -1,0 +1,38 @@
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            font-size: 0.875em;
+            color: $dark;
+
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+// Desktop styles
+@include media-breakpoint-up(lg) {
+    .navbar-nav {
+        .nav-item {
+            + .nav-item {
+                margin-left: 40px;
+
+                @include media-breakpoint-down(xl) {
+                    margin-left: 30px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    .container-fluid--nav {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: $red;
+}

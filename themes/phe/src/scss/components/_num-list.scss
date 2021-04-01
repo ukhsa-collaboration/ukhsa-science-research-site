@@ -1,0 +1,30 @@
+.num-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        counter-increment: counter;
+        position: relative;
+        padding-left: 61px;
+
+        + li {
+            margin-top: 1.5rem;
+        }
+
+        &:before {
+            content: counter(counter);
+            position: absolute;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            background-color: $blue;
+            left: 0;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3125em;
+        }
+    }
+}

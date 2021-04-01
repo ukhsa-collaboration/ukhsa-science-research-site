@@ -1,0 +1,41 @@
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+
+    @include media-breakpoint-down(md) {
+        display: block;
+        text-align: left;
+        margin-top: 4rem;
+    }
+
+    li {
+        a {
+            padding: 10px 20px;
+            font-size: 0.875em;
+            color: $dark;
+
+            @include media-breakpoint-down(lg) {
+                padding: 10px;
+
+                @include media-breakpoint-down(md) {
+                    padding-left: 0;
+                }
+            }
+        }
+        + li {
+            margin-left: 2rem;
+            @include media-breakpoint-down(lg) {
+                margin-left: 1rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                margin-left: 0;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}

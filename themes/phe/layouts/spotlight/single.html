@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+<div class="page-title">
+    <div class="container">
+        <h1>Spotlight on:<br>{{ .Title }}</h1>
+    </div>
+</div>
+
+<div class="container pt-5 pb-5">
+    <nav aria-label="breadcrumb" class="breadcrumbs">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="/our-research/">Our research</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Spotlight on: {{ .Title }}</li>
+        </ol>
+    </nav>
+</div>
+
+{{ .Content }}
+
+{{ $spotlights := (where (where (where .Site.RegularPages "Section" "our-research") "Date.Unix" "<" .Date.Unix ) "Title" "!=" .Title ) }}
+
+{{ if len $spotlights | lt 0 }}
+<section class="pb-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pb-6">
+                <h2>Previous spotlights</h2>
+            </div>
+        </div>
+
+        <div class="spotlights row">
+
+            {{ range first 3 $spotlights }}
+
+            <div class="col-lg-4 col-md-6">
+                <a href="{{.Permalink}}" class="spotlights__item">
+                    <img src="https://via.placeholder.com/513x276">
+                    <div class="spotlights__inner">
+                        <h6>{{ .Title }}</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                </a>
+            </div>
+
+            {{ end }}
+
+        </div><!-- /.spotlights -->
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

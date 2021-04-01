@@ -1,0 +1,35 @@
+.partnerships {
+    position: relative;
+    padding-top: 1.5rem;
+
+    .col-md-6 {
+        padding-top: 20px;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        text-indent: -999999px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-image: url('/svg/arrow-dark.svg');
+        background-size: 16px 16px;
+        background-position: center center;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        display: block;
+
+        &.slick-prev {
+            right: 48px;
+            transform: scaleX(-1);
+        }
+
+        &.slick-disabled {
+            opacity: .5;
+        }
+    }
+}

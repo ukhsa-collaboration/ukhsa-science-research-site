@@ -1,0 +1,36 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Public Health England"
+theme = "phe"
+
+[menu]
+  [[menu.main]]
+    name = "About us"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "Our research"
+    url = "/our-research/"
+    identifier = "our-research"
+    weight = 2
+  [[menu.main]]
+    name = "Our research"
+    url = "/our-research/"
+    parent = "our-research"
+    weight = 3
+  [[menu.main]]
+    name = "Partnerships"
+    url = "/partnerships/"
+    weight = 4
+  [[menu.main]]
+    name = "Opportunities"
+    url = "/opportunities/"
+    weight = 5
+  [[menu.main]]
+    name = "Research integrity"
+    url = "/research-integrity/"
+    weight = 6
+  [[menu.main]]
+    name = "Contact us"
+    url = "/contact/"
+    weight = 7

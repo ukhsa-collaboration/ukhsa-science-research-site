@@ -1,0 +1,58 @@
+<ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
+
+    {{ $spotlightUrl := . }}
+
+    {{ range first 1 (where .Site.RegularPages "Section" "our-research") }}
+        {{ $spotlightUrl = .URL }}
+    {{ end }}
+
+    {{ $current := . }}
+    {{ range .Site.Menus.main }}
+
+        {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+        {{ $active = or $active (eq .Name $current.Title) }}
+        {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
+        {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+
+        {{ if .HasChildren }}
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle {{ if $active }}active{{ end }}" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ .Name }}
+            </a>
+            
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {{ range .Children }}
+                    
+                    <li>
+                        <a class="dropdown-item {{ if $active }}active{{ end }}" href="{{ .URL }}">
+                            {{ .Name }}
+                        </a>
+                    </li>
+                
+                {{ end }}
+
+                <li>
+                    <a class="dropdown-item" href="{{ $spotlightUrl }}">
+                        Spotlight research
+                    </a>
+                </li>
+
+                <li>
+                    <a class="dropdown-item" href="#">
+                        Research portal <i class="icon icon--small icon--external-link"></i>
+                    </a>
+                </li>
+            </ul>
+
+        {{ else }}
+
+        <li class="nav-item ">
+            <a class="nav-link {{ if $active }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        
+        {{ end }}
+
+    {{ end }}
+
+</ul>

@@ -1,0 +1,73 @@
+.button {
+    background-color: $white;
+    color: $dark;
+    display: inline-block;
+    padding: 13px 14px;
+    padding-right: 46px;
+    font-size: 0.875em;
+    text-decoration: none;
+    min-width: 184px;
+    transition: transform .2s ease, box-shadow .2s ease;
+
+        &:hover {
+            transform: translateX(5px);
+            color: $dark;
+            box-shadow: 2px 2px 8px 5px rgba(0,0,0,.2);
+        }
+
+    
+    &.button--external, &.button--arrow {
+        position: relative;
+        
+        &:after {
+            content: '';
+            background-image: url('/svg/external-green.svg');
+            width: 16px;
+            height: 16px;
+            background-size: 16px 16px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            margin-top: -8px;
+            right: 14px;
+        }
+    }
+
+    &.button--arrow {
+        &:after {
+            content: '';
+            background-image: url('/svg/arrow-green.svg');
+            width: 16px;
+            height: 16px;
+            background-size: 16px 16px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            margin-top: -8px;
+            right: 14px;
+        }
+    }
+
+    &.button--alt {
+        background-color: $red;
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
+
+        &.button--external {
+            &:after {
+                background-image: url('/svg/external-white.svg');
+            }
+        }
+
+        &.button--arrow {
+            &:after {
+                background-image: url('/svg/arrow-white.svg');
+            }
+        }
+    }
+}

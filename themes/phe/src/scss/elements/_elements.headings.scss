@@ -1,0 +1,52 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-stack;
+    font-weight: 300;
+}
+
+h1, .h1 {
+    font-size: 3.75em;
+    margin-bottom: 1.25rem;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 3em;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 2.375em;
+    }
+}
+
+h2, .h2 {
+    font-size: 3em;
+    margin-bottom: 1.25rem;
+
+    @include media-breakpoint-down(md) {
+        font-size: 1.75em;
+    }
+}
+
+h3, .h3 {
+    font-size: 2.375em;
+    margin-bottom: 1.25rem;
+
+    @include media-breakpoint-down(md) {
+        font-size: 1.75em;
+    }
+}
+
+h4, .h4 {
+    margin-bottom: .75rem;
+    font-size: 1.75em;
+}
+
+h5, .h5 {
+    margin-bottom: 1rem;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+h6, .h6 {
+    margin-bottom: .75rem;
+    font-size: 1em;
+    font-weight: bold;
+}

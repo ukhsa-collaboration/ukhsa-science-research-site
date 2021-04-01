@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="spotlight spotlight--intro" style="background-image: url('/images/{{ .Get "image" }}')">
+        <div class="spotlight__content">
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <h3 class="mb-4">{{ .Get "title" }}</h3>
+                </div>
+                <div class="col-10 col-lg-5 offset-1">
+                    {{ .Inner }}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ if .Get "caption" }}
+    <div class="caption">{{ .Get "caption" }}</div>
+    {{ end }}
+</div>
