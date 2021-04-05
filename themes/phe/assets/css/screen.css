@@ -10489,9 +10489,9 @@ p {
   border: 1px solid #A4AEB5;
   border-left: 9px solid #00B092;
   padding: 21px 30px;
-  margin-bottom: .5rem;
   display: block;
-  height: calc(100% - .5rem);
+  margin-bottom: .5rem;
+  height: 128px;
   text-decoration: none;
   color: #1E1E1E;
   -webkit-transition: box-shadow .2s ease, -webkit-transform .2s ease;
@@ -10650,7 +10650,8 @@ p {
   -webkit-transition: box-shadow .2s ease, -webkit-transform .2s ease;
   transition: box-shadow .2s ease, -webkit-transform .2s ease;
   transition: transform .2s ease, box-shadow .2s ease;
-  transition: transform .2s ease, box-shadow .2s ease, -webkit-transform .2s ease; }
+  transition: transform .2s ease, box-shadow .2s ease, -webkit-transform .2s ease;
+  height: 100%; }
   .spotlights .spotlights__item:hover {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);

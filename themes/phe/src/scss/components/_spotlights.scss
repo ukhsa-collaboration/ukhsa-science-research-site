@@ -4,6 +4,7 @@
         text-decoration: none;
         border: 1px solid $silver;
         transition: transform .2s ease, box-shadow .2s ease;
+        height: 100%;
 
         &:hover {
             transform: translateY(-5px);

@@ -9,7 +9,9 @@
 
             <div class="col-lg-6 pb-5 pb-lg-0 order-1 order-lg-2">
                 <h4 class="d-lg-none d-print-none pb-4">{{ .Get "title" }}</h4>
-                <img src="https://via.placeholder.com/552x427">
+                {{ if .Get "image" }}
+                    <img src="{{ .Get "image" }}" alt="{{ .Get "alt" }}">
+                {{ end }}
             </div>
         </div>
 

@@ -5,6 +5,7 @@
         slidesToShow: 2,
         slidesToScroll: 2,
         infinite: false,
+        adaptiveHeight: true,
         vertical: true,
         responsive: [
             {

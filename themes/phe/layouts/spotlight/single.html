@@ -35,10 +35,10 @@
 
             <div class="col-lg-4 col-md-6">
                 <a href="{{.Permalink}}" class="spotlights__item">
-                    <img src="https://via.placeholder.com/513x276">
+                    <img src="/images/thumbnails/{{ .Params.Thumbnail }}" alt="{{ .Params.Alt }}">
                     <div class="spotlights__inner">
                         <h6>{{ .Title }}</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <p>{{ .Params.Excerpt }}</p>
                     </div>
                 </a>
             </div>

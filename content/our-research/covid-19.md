@@ -3,8 +3,9 @@ title: "COVID-19"
 date: 2021-03-26T12:15:53Z
 draft: false
 type: "spotlight"
-
-excerpt: "PHE has contributed to the generation of knowledge and evidence of SARS-CoV-2 through research in a wide variety of topics from characterisation of the virus to behavioural aspects of the response. Each month we will highlight a key study led or co-led by PHE's researchers."
+thumbnail: "covid-19.jpg"
+alt: "Covid-19."
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
 ---
 
 {{< spotlight-feature title="COVID-19" image="coronavirus.jpg" caption="Credit: Crown Copyright" >}}
@@ -14,7 +15,7 @@ excerpt: "PHE has contributed to the generation of knowledge and evidence of SAR
 {{< /spotlight-feature >}}
 
 
-{{< spotlight-content title="COVID-19 - SIREN study" >}}
+{{< spotlight-content title="COVID-19 - SIREN study" image="/images/covid-19-siren-study.jpg" alt="Covid-19" >}}
     <p>SIREN (Sarscov2 Immunity & REinfection EvaluatioN): The impact of detectable anti SARS-COV2 antibody on the incidence of COVID-19 in healthcare workers</p>
     <h5>What is the SIREN study?</h5>
     <p>The purpose of this study is to understand whether prior infection with SARS-CoV2 (the virus that causes COVID-19) protects against future infection with the same virus.</p>

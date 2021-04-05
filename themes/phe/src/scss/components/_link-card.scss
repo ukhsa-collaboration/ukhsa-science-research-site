@@ -2,9 +2,9 @@
     border: 1px solid $silver;
     border-left: 9px solid $green;
     padding: 21px 30px;
-    margin-bottom: .5rem;
     display: block;
-    height: calc(100% - .5rem);
+    margin-bottom: .5rem;
+    height: 128px;
     text-decoration: none;
     color: $dark;
     transition: transform .2s ease, box-shadow .2s ease;
