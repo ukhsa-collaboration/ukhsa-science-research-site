@@ -3,7 +3,7 @@
     {{ $spotlightUrl := . }}
 
     {{ range first 1 (where .Site.RegularPages "Section" "our-research") }}
-        {{ $spotlightUrl = .URL }}
+        {{ $spotlightUrl = .Permalink }}
     {{ end }}
 
     {{ $current := . }}

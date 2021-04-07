@@ -3,6 +3,11 @@
     display: block;
     overflow: hidden;
     transition: transform .2s ease, box-shadow .2s ease;
+    max-width: 451px;
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 2rem;
+    }
     
     img {
         transition: transform .2s ease;

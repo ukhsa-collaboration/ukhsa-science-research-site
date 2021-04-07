@@ -5,7 +5,7 @@ theme = "phe"
 
 [menu]
   [[menu.main]]
-    name = "About us"
+    name = "About research"
     url = "/about/"
     weight = 1
   [[menu.main]]
@@ -23,7 +23,7 @@ theme = "phe"
     url = "/partnerships/"
     weight = 4
   [[menu.main]]
-    name = "Opportunities"
+    name = "Research opportunities"
     url = "/opportunities/"
     weight = 5
   [[menu.main]]
