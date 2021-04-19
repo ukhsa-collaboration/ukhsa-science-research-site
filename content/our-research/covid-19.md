@@ -14,11 +14,10 @@ excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
     <p>Below is one of many studies contributing to the scientific knowledge base for the virus.</p>
 {{< /spotlight-feature >}}
 
-
-{{< spotlight-content title="COVID-19 - SIREN study" image="/images/covid-19-siren-study.jpg" alt="Covid-19" >}}
+{{< spotlight-content title="COVID-19 - SIREN study" image="/images/covid-19-siren-study.jpg" alt="Covid-19." >}}
     <p>SIREN (Sarscov2 Immunity & REinfection EvaluatioN): The impact of detectable anti SARS-COV2 antibody on the incidence of COVID-19 in healthcare workers</p>
     <h5>What is the SIREN study?</h5>
     <p>The purpose of this study is to understand whether prior infection with SARS-CoV2 (the virus that causes COVID-19) protects against future infection with the same virus.</p>
     <p>The study has received approval from the NHS Health Research Authority Berkshire Research Ethics Committee and is funded by the National Institute of Health Research and Public Health England.</p>
-    {{< button text="Find out more" icon="external" url="#" >}}
+    {{< button text="Find out more" icon="external" url="#" external="true">}}
 {{< /spotlight-content >}}

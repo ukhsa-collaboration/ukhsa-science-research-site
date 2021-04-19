@@ -1,1 +1,1 @@
-<a href="{{ .Get "url" }}" class="button button--alt {{ if .Get "icon" }}button--{{ .Get "icon" }}{{ end }}">{{ .Get "text" }}</a>
+<a href="{{ .Get "url" }}" class="button button--alt {{ if .Get "icon" }}button--{{ .Get "icon" }}{{ end }}" {{ if .Get "external" }}target="_blank"{{ end }}>{{ .Get "text" }}</a>
