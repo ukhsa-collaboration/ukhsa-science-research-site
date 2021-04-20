@@ -27,4 +27,10 @@
 
 
     }
+
+    @include media-breakpoint-down(lg) {
+        > div {
+            margin-bottom: 2rem;
+        }   
+    }
 }

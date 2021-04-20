@@ -22,10 +22,13 @@
         border: none;
         box-shadow: none;
         display: block;
+        transform: rotate(90deg);
+
+
 
         &.slick-prev {
             right: 48px;
-            transform: scaleX(-1);
+            transform: rotate(-90deg);
         }
 
         &.slick-disabled {

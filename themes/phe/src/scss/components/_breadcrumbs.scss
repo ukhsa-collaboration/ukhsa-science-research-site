@@ -1,6 +1,12 @@
 .breadcrumbs {
     --bs-breadcrumb-divider: url('/svg/chevron-right.svg');
     font-size: 0.875em;
+    line-height: 2;
+
+    @include media-breakpoint-down(md) {
+        font-size: .7em;
+    }
+
     a {
         color: $dark;
     }
@@ -14,10 +20,19 @@
         + .breadcrumb-item {
             padding-left: 15px;
 
+            @include media-breakpoint-down(md) {
+                padding-left: 10px;
+            }
+
             &:before {
                 top: 1px;
                 position: relative;
                 padding-right: 15px;
+
+                @include media-breakpoint-down(md) {
+                    padding-right: 10px;
+                    top: 3px;
+                }
             }
         }
     }

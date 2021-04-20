@@ -21,7 +21,7 @@
         
         &:after {
             content: '';
-            background-image: url('/svg/external-green.svg');
+            background-image: url('/svg/external-black.svg');
             width: 16px;
             height: 16px;
             background-size: 16px 16px;
@@ -37,7 +37,7 @@
     &.button--arrow {
         &:after {
             content: '';
-            background-image: url('/svg/arrow-green.svg');
+            background-image: url('/svg/arrow-black.svg');
             width: 16px;
             height: 16px;
             background-size: 16px 16px;

@@ -16,4 +16,46 @@
             margin-left: 10px;
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        display: block;
+        background-color: #F8F9FA;
+        border: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            a {
+                padding-left: 0;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+            }
+
+            &:not(:first-child) {
+                a {
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.dropdown {
+    @include media-breakpoint-down(lg) {
+        > a {
+            display: none;
+        }
+    }
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    @include media-breakpoint-down(lg) {
+        background-color: #F8F9FA !important;
+        font-weight: bold;
+        color: $black;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
 }
