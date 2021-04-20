@@ -14,4 +14,14 @@ body {
     font-family: $body-font-stack;
     color: $dark;
     font-size: 16px;
+
+    padding-top: 74px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 64px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-top: 50px;
+    }
 }

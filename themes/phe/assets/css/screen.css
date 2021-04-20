@@ -10323,7 +10323,14 @@ textarea.form-control-lg {
 body {
   font-family: Arial, sans-serif;
   color: #1E1E1E;
-  font-size: 16px; }
+  font-size: 16px;
+  padding-top: 74px; }
+  @media (max-width: 991.98px) {
+    body {
+      padding-top: 64px; } }
+  @media (max-width: 767.98px) {
+    body {
+      padding-top: 50px; } }
 
 /* Slider */
 .slick-slider {
@@ -10660,6 +10667,23 @@ p {
   @media (max-width: 767.98px) {
     .sub-footer {
       padding: 2rem 0; } }
+
+#site-header {
+  height: 74px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+  @media (max-width: 991.98px) {
+    #site-header {
+      height: 64px; } }
+  @media (max-width: 767.98px) {
+    #site-header {
+      height: 50px; } }
+  #site-header .navbar {
+    height: 100%; }
+    #site-header .navbar .container-fluid, #site-header .navbar .container-sm, #site-header .navbar .container-md, #site-header .navbar .container-lg, #site-header .navbar .container-xl {
+      background-color: #F8F9FA; }
 
 .icon {
   display: inline-block;
