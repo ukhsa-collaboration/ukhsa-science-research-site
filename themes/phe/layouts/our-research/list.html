@@ -19,8 +19,8 @@
         <div class="row">
             <h2>Research areas & capability</h2>
             <div class="col-lg-8">
-                <p>We use and conduct research in all parts of the organisation though focussed on our National
-                    Infection Service and Health Protection & Medical directorate..</p>
+                <p>We conduct research and employ evidence-based practice throughout all parts of the organisation, particularly within the National Infection Service and the Health Protection & Medical Directorate.
+                </p>
             </div>
         </div>
     </div>
@@ -89,11 +89,11 @@
 
 <section class="spotlight" style="background-image: url('/images/coronavirus.jpg')">
     <div class="container">
-        <h2>Spotlight On: {{ .Title }}</h2>
+        <h3 class="h2">Spotlight On: {{ .Title }}</h3>
         <div class="row">
             <div class="col-lg-6">
-                <p class="mb-5">{{ .Params.excerpt }}</p>
-                <a href="{{ .Permalink }}" class="button button--arrow">Learn more</a>
+                <p class="mb-5">{{ .Description }}</p>
+                <a href="{{ .Permalink }}" class="button button--arrow">{{ .Params.buttonText }}</a>
             </div>
         </div>
     </div>

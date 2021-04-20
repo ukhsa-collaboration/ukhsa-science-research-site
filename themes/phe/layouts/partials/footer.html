@@ -1,7 +1,7 @@
 <footer id="site-footer">
     <div class="container">
         <a class="footer-logo" href="{{ .Site.BaseURL }}" alt="Public Health England.">
-            <img src="/logo.png">
+            <img src="/logo.png" alt="Public Health England.">
         </a>
 
         {{ partial "footer-nav" . }}
@@ -13,14 +13,19 @@
         <div class="row">
             <div class="col-lg-6">
                 <ul class="sub-footer-menu">
-                    <li><a href="#">Terms &amp; conditions</a></li>
-                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="https://www.gov.uk/help/terms-conditions" target="_blank">Terms &amp; conditions</a></li>
+                    <li><a href="https://www.gov.uk/help/privacy-notice" target="_blank">Privacy policy</a></li>
                     <li><a href="#">Accessibility statement</a></li>
                 </ul>
             </div>
+        </div>
 
-            <div class="col-lg-6 d-flex align-items-center justify-content-lg-end">
-                <p class="copy">&copy; {{ now.Format "2006"}} Public Health England. All rights reserved</p>
+        <div class="row pt-3 pb-2">
+            <div class="col-lg-6 d-flex align-items-center justify-content-lg-start">
+                <p class="copy">&copy; {{ now.Format "2006"}} Crown Copyright. All images &copy; {{ now.Format "2006"}} Crown Copyright. All Rights Reserved.</p>
+            </div>
+            <div class="col-lg-6">
+                <p class="copy">All content is available under the Open Government Licence v3.0, except where otherwise stated.</p>
             </div>
         </div>
     </div>
