@@ -33,4 +33,51 @@
             margin-bottom: 2rem;
         }   
     }
+
+    .slick-slide {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .slick-track {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .slick-dots {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-top: 1rem;
+
+        li {
+
+            + li {
+                margin-left: 10px;
+            }
+
+            button {
+                text-indent: -99999px;
+                height: 15px;
+                width: 15px;
+                border: none;
+                background-color: #DDD;
+            }
+
+            &.slick-active {
+                button {
+                    background-color: $red;
+                }
+            }
+
+            &:not(.slick-active) {
+                &:hover {
+                    button {
+                        background-color: #CCC;
+                    }
+                }
+            }
+        }
+    }
 }

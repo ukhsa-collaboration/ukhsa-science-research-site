@@ -31,9 +31,9 @@
 
         <div class="spotlights row">
 
-            {{ range first 3 $spotlights }}
+            {{ range $spotlights }}
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 spotlights__slide">
                 <a href="{{.Permalink}}" class="spotlights__item">
                     <img src="/images/thumbnails/{{ .Params.Thumbnail }}" alt="{{ .Params.Alt }}">
                     <div class="spotlights__inner">

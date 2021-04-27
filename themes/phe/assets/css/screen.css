@@ -10961,6 +10961,35 @@ a:hover {
   .spotlights > div {
     margin-bottom: 2rem; } }
 
+.spotlights .slick-slide {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.spotlights .slick-track {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.spotlights .slick-dots {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin-top: 1rem; }
+  .spotlights .slick-dots li + li {
+    margin-left: 10px; }
+  .spotlights .slick-dots li button {
+    text-indent: -99999px;
+    height: 15px;
+    width: 15px;
+    border: none;
+    background-color: #DDD; }
+  .spotlights .slick-dots li.slick-active button {
+    background-color: #822433; }
+  .spotlights .slick-dots li:not(.slick-active):hover button {
+    background-color: #CCC; }
+
 .sub-footer-menu {
   display: -webkit-box;
   display: flex;
