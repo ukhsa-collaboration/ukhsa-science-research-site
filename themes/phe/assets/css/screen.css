@@ -10351,8 +10351,6 @@ body {
   display: block;
   margin: 0;
   padding: 0; }
-  .slick-list:focus {
-    outline: none; }
   .slick-list.dragging {
     cursor: pointer;
     cursor: hand; }
@@ -10882,6 +10880,8 @@ a:hover {
 .partnerships {
   position: relative;
   padding-top: 1.5rem; }
+  .partnerships strong {
+    display: block; }
   .partnerships .col-md-6 {
     padding-top: 20px; }
   .partnerships .slick-arrow {
