@@ -2,8 +2,8 @@
 
 ## Table of contents
  * [Git Clone](#git-clone)
- * [Running the Hugo Server](#running-the-hugo-server])
- * [Editing Regular Pages](#editing-regular-pages])
+ * [Running the Hugo Server](#running-the-hugo-server)
+ * [Editing Regular Pages](#editing-regular-pages)
  * [Creating a New Spotlight Page](#creating-a-new-spotlight-page)
  * [Spotlight Front Matter](#spotlight-front-matter)
  * [Spotlight Content with Shortcodes](#spotlight-content-with-shortcodes)
