@@ -10,6 +10,16 @@
         background-size: 13px 13px;
     }
 
+    &.icon--xs {
+        width: 12px;
+        height: 12px;
+        background-size: 12px 12px;
+    }
+
+    &.icon--right {
+        margin-left: 6px;
+    }
+
     &.icon--external-link {
         background-image: url('/svg/external-link.svg');
         background-position: center center;
