@@ -2,13 +2,13 @@
 
 ## Table of contents
  * [Git Clone](#git-clone)
- * [Running the Hugo Server](running-the-hugo-server])
- * [Editing Regular Pages](editing-regular-pages])
- * [Creating a New Spotlight Page](creating-a-new-spotlight-page)
- * [Spotlight Front Matter](spotlight-front-matter)
- * [Spotlight Content with Shortcodes](spotlight-content-with-shortcodes)
- * [Shortcode Contents](shortcode-contents)
- * [Button Shortcode](button-shortcode)
+ * [Running the Hugo Server](#running-the-hugo-server])
+ * [Editing Regular Pages](#editing-regular-pages])
+ * [Creating a New Spotlight Page](#creating-a-new-spotlight-page)
+ * [Spotlight Front Matter](#spotlight-front-matter)
+ * [Spotlight Content with Shortcodes](#spotlight-content-with-shortcodes)
+ * [Shortcode Contents](#shortcode-contents)
+ * [Button Shortcode](#button-shortcode)
 
 ## Git Clone
 In order to modify the site files, you should clone the site onto your local machine from the repository here: https://github.com/publichealthengland/science-research-site.
