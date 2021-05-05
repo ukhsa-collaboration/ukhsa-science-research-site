@@ -1,20 +1,20 @@
-<h1 id="quick-reference-guide-for-the-phe-research-website">Quick Reference Guide for the “PHE Research website”</h1>
+<h1 id="quick-reference-guide-for-the-phe-research-website">Quick Reference Guide for the ‘PHE Research website’</h1>
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>
-<li><a href="">Git Clone</a></li>
-<li><a href="">Running the Hugo Server</a></li>
-<li><a href="">Editing Regular Pages</a></li>
-<li><a href="">Creating a New Spotlight Page</a></li>
-<li><a href="">Spotlight Front Matter</a></li>
-<li><a href="">Spotlight Content with Shortcodes</a></li>
-<li><a href="">Shortcode Contents</a></li>
-<li><a href="">Button Shortcode</a></li>
+<li><a href="#git-clone">Git Clone</a></li>
+<li><a href="running-the-hugo-server%5D">Running the Hugo Server</a></li>
+<li><a href="editing-regular-pages%5D">Editing Regular Pages</a></li>
+<li><a href="creating-a-new-spotlight-page">Creating a New Spotlight Page</a></li>
+<li><a href="spotlight-front-matter">Spotlight Front Matter</a></li>
+<li><a href="spotlight-content-with-shortcodes">Spotlight Content with Shortcodes</a></li>
+<li><a href="shortcode-contents">Shortcode Contents</a></li>
+<li><a href="button-shortcode">Button Shortcode</a></li>
 </ul>
 <h2 id="git-clone">Git Clone</h2>
-<p>In order to modify the site files, you should clone the site onto your local machine from the repository here: https://github.com/publichealthengland/science-research-site</p>
+<p>In order to modify the site files, you should clone the site onto your local machine from the repository here: https://github.com/publichealthengland/science-research-site.</p>
 <p>We recommend using Git GUI software such as SourceTree, GitHub Desktop, or Tower.</p>
 <p>Make sure you have the ‘main’ branch checked out (not ‘gh-pages’, that is specifically for the published site).</p>
-<p>You must have Hugo installed on your local machine to run the Hugo development server: https://gohugo.io/getting-started/installing/</p>
+<p>You must have Hugo installed on your local machine to run the Hugo development server: https://gohugo.io/getting-started/installing/.</p>
 <p>You will need to use a console such as Terminal (for Mac) or Cmder (for Windows) in order to run Git and Hugo commands.</p>
 <h2 id="running-the-hugo-server">Running the Hugo Server</h2>
 <p>Once you have the site cloned, Hugo installed, and a suitable console or terminal, you are ready to proceed. You should open your terminal, navigate to the root of the website folder and run the following command:</p>
@@ -40,12 +40,12 @@
 <p>The following front matter parameters should always be declared when creating a new spotlight:</p>
 <table>
 <colgroup>
-<col style="width: 26%" />
-<col style="width: 73%" />
+<col style="width: 45%" />
+<col style="width: 55%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Type</th>
+<th>Parameter</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -64,7 +64,7 @@
 </tr>
 <tr class="even">
 <td>type</td>
-<td>This must be set to “spotlight”</td>
+<td>This must be set to ‘spotlight’</td>
 </tr>
 <tr class="odd">
 <td>thumbnail</td>
@@ -104,27 +104,26 @@
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true"></a>    <span class="kw">&lt;p&gt;</span>The study has received approval from the NHS Health Research Authority Berkshire Research Ethics Committee and is funded by the National Institute of Health Research and Public Health England.<span class="kw">&lt;/p&gt;</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true"></a>    {{<span class="er">&lt;</span> button text=&quot;Find out more&quot; icon=&quot;external&quot; url=&quot;https://www.gov.uk/government/news/past-covid-19-infection-provides-some-immunity-but-people-may-still-carry-and-transmit-virus&quot; external=&quot;true&quot;&gt;}}</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true"></a>{{<span class="er">&lt;</span> /spotlight-content &gt;}}</span></code></pre></div>
-<p>For the spotlight-content shortcode, a <strong>title</strong> and <strong>image</strong> and <strong>alt</strong> must be provided in the shortcode markdown. Images must be stored in the same folder: <em>root/themes/phe/static/images/</em></p>
-<p><strong>caption</strong> is optional, and should be added when credit to the image owner needs to be provided.</p>
+<p>For the spotlight-content shortcode, a <strong>title</strong> and <strong>image</strong> and <strong>alt</strong> must be provided in the shortcode markdown. Images must be stored in the same folder: <em>root/themes/phe/static/images/</em>. The <strong>caption</strong> is optional, and should be added when credit to the image owner needs to be provided.</p>
 <h2 id="shortcode-contents">Shortcode Contents</h2>
-<p>Contents within the shortcode tags should be in HTML5. I recommend a simple combination of p and heading (h1,h2,h3 etc.) tags. If in doubt, refer to the examples in this document or the ‘covid-19.md’ file.</p>
+<p>Contents within the shortcode tags should be in HTML5. The recommendation is a simple combination of <em>p</em> and heading (<em>h1</em>,<em>h2</em>,<em>h3</em>,etc.) tags. If in doubt, refer to the examples in this document or the ‘covid-19.md’ file.</p>
 <h2 id="button-shortcode">Button Shortcode</h2>
 <p>As included in the spotlight-content example, a button shortcode is also available to be used within either main shortcode. Buttons are self-closing, in that they do not need a closing tag like the other shortcodes. Button shortcodes have the following options:</p>
 <table>
 <thead>
 <tr class="header">
-<th>Type</th>
+<th>Parameter</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>text</td>
-<td>The button text <strong>(required)</strong></td>
+<td>The button text <em>(required)</em></td>
 </tr>
 <tr class="even">
 <td>url</td>
-<td>The URL to where the button should link <strong>(required)</strong></td>
+<td>The URL to where the button should link <em>(required)</em></td>
 </tr>
 <tr class="odd">
 <td>external</td>
