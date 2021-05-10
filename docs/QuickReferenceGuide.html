@@ -1,0 +1,137 @@
+<h1 id="quick-reference-guide-for-the-phe-research-website">Quick Reference Guide for the ‘PHE Research website’</h1>
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#git-clone">Git Clone</a></li>
+<li><a href="#running-the-hugo-server">Running the Hugo Server</a></li>
+<li><a href="#editing-regular-pages">Editing Regular Pages</a></li>
+<li><a href="#creating-a-new-spotlight-page">Creating a New Spotlight Page</a></li>
+<li><a href="#spotlight-front-matter">Spotlight Front Matter</a></li>
+<li><a href="#spotlight-content-with-shortcodes">Spotlight Content with Shortcodes</a></li>
+<li><a href="#shortcode-contents">Shortcode Contents</a></li>
+<li><a href="#button-shortcode">Button Shortcode</a></li>
+</ul>
+<h2 id="git-clone">Git Clone</h2>
+<p>In order to modify the site files, you should clone the site onto your local machine from the repository here: https://github.com/publichealthengland/science-research-site.</p>
+<p>We recommend using Git GUI software such as SourceTree, GitHub Desktop, or Tower.</p>
+<p>Make sure you have the ‘main’ branch checked out (not ‘gh-pages’, that is specifically for the published site).</p>
+<p>You must have Hugo installed on your local machine to run the Hugo development server: https://gohugo.io/getting-started/installing/.</p>
+<p>You will need to use a console such as Terminal (for Mac) or Cmder (for Windows) in order to run Git and Hugo commands.</p>
+<h2 id="running-the-hugo-server">Running the Hugo Server</h2>
+<p>Once you have the site cloned, Hugo installed, and a suitable console or terminal, you are ready to proceed. You should open your terminal, navigate to the root of the website folder and run the following command:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">hugo</span> server</span></code></pre></div>
+<p>This will initiate a local development server and provide a link for you to view the site e.g. http://localhost:1313</p>
+<figure>
+<img src="hugo.png" alt="" /><figcaption>hugo.png</figcaption>
+</figure>
+<p>If the command is successful, you should see a message similar to the above.</p>
+<h2 id="editing-regular-pages">Editing Regular Pages</h2>
+<p>Page templates for regular pages can be found in their respective folders within the PHE theme folder. Please note that in the example below, ‘root’ is just representative of whatever you named the root folder of the site during the cloning process, and ‘pagename’ represents the name of the page you are looking for.</p>
+<p>You can find the regular page templates here:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="ex">root/themes/phe/layouts/pagename/single.html</span> </span></code></pre></div>
+<p>Or in the case of the ‘Our Research’ page:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="ex">root/themes/phe/layouts/our-research/list.html</span> </span></code></pre></div>
+<p>These page templates are standard HTML5 and should be edited as such.</p>
+<h2 id="creating-a-new-spotlight-page">Creating a New Spotlight Page</h2>
+<p>Creating a new spotlight page can be achieved by performing the following command in the site root:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">hugo</span> new our-research/example.md</span></code></pre></div>
+<p>‘Example’ is used for demonstration purposes, you can use any page name that you would like. This will create a new markdown page for the spotlight, and automatically populate some front matter such as date and title. Please note that draft will be set to true by default, you must set this to false in order for these pages to appear in the published site.</p>
+<h2 id="spotlight-front-matter">Spotlight Front Matter</h2>
+<p>‘Front Matter’ is a term used to refer to a set of variables that are stored within a page’s markdown (.md) file. You can see examples of these within the ‘covid-19.md’ spotlight.</p>
+<p>The following front matter parameters should always be declared when creating a new spotlight:</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>title</td>
+<td>The title of the page (created automatically)</td>
+</tr>
+<tr class="even">
+<td>date</td>
+<td>The date that the page was published (created automatically)</td>
+</tr>
+<tr class="odd">
+<td>draft</td>
+<td>True by default. Set to false if you want to add this page to the live/published site.</td>
+</tr>
+<tr class="even">
+<td>type</td>
+<td>This must be set to ‘spotlight’</td>
+</tr>
+<tr class="odd">
+<td>thumbnail</td>
+<td>The name of the thumbnail image file. <strong>Thumbnails must be 513 pixels wide, and 276 pixels tall.</strong> These should be stored in the following folder: <em>root/themes/phe/static/images/thumbnails</em></td>
+</tr>
+<tr class="even">
+<td>alt</td>
+<td>This is the alt text for the thumbnail, please provide this for accessibility and SEO purposes.</td>
+</tr>
+<tr class="odd">
+<td>description</td>
+<td>This is the long description that can be found on the ‘Our Research’ page</td>
+</tr>
+<tr class="even">
+<td>excerpt</td>
+<td>This is a short description that will be shown when this spotlight is part of the row of older spotlights at the bottom of the current spotlight.</td>
+</tr>
+<tr class="odd">
+<td>buttonText</td>
+<td>This is the button text that will be found on the ‘Our Research’ page that links to the spotlight e.g. ‘Learn more on Covid-19’</td>
+</tr>
+</tbody>
+</table>
+<p>All front-matter items for spotlights other than ‘date’ and ‘draft’ should be wrapped in double quotes. Again, please view the ‘covid-19.md’ file for an example.</p>
+<h2 id="spotlight-content-with-shortcodes">Spotlight Content with Shortcodes</h2>
+<p>Spotlight content should be created using the two provided shortcodes; ‘spotlight-feature’ and ‘spotlight-content’. An example of each has been provided below:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>{{<span class="er">&lt;</span> spotlight-feature title=&quot;COVID-19&quot; image=&quot;coronavirus.jpg&quot;&gt;}}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true"></a>    <span class="kw">&lt;p&gt;</span>PHE has conducted over 150 research and surveillance studies, most in collaboration with academics, to better understand SARS CoV-2 virus and its transmission.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true"></a>    <span class="kw">&lt;p&gt;</span>We have published or submitted over 200 new research papers, commentaries and editorials on all aspects of the SARS CoV-2 virus, the illness it causes and how to mitigate the impacts of the pandemic.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true"></a>    <span class="kw">&lt;p&gt;</span>Below is one of many studies contributing to the scientific knowledge base for the virus.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true"></a>{{<span class="er">&lt;</span> /spotlight-feature &gt;}}</span></code></pre></div>
+<p>For the spotlight-feature shortcode, a <strong>title</strong> and <strong>image</strong> must be provided in the shortcode markdown. Images must be stored in the following folder: <em>root/themes/phe/static/images/</em></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a>{{<span class="er">&lt;</span> spotlight-content title=&quot;COVID-19 - SIREN study&quot; image=&quot;covid-19-siren-study.jpg&quot; alt=&quot;Covid-19.&quot; caption=&quot;Credit: Maksim Tkachenko&quot; &gt;}}</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true"></a>    <span class="kw">&lt;p&gt;</span>SIREN (Sarscov2 Immunity <span class="er">&amp;</span> REinfection EvaluatioN): The impact of detectable anti SARS-COV2 antibody on the incidence of COVID-19 in healthcare workers<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true"></a>    <span class="kw">&lt;h5&gt;</span>What is the SIREN study?<span class="kw">&lt;/h5&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true"></a>    <span class="kw">&lt;p&gt;</span>The purpose of this study is to understand whether prior infection with SARS-CoV2 (the virus that causes COVID-19) protects against future infection with the same virus.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true"></a>    <span class="kw">&lt;p&gt;</span>The study has received approval from the NHS Health Research Authority Berkshire Research Ethics Committee and is funded by the National Institute of Health Research and Public Health England.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true"></a>    {{<span class="er">&lt;</span> button text=&quot;Find out more&quot; icon=&quot;external&quot; url=&quot;https://www.gov.uk/government/news/past-covid-19-infection-provides-some-immunity-but-people-may-still-carry-and-transmit-virus&quot; external=&quot;true&quot;&gt;}}</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true"></a>{{<span class="er">&lt;</span> /spotlight-content &gt;}}</span></code></pre></div>
+<p>For the spotlight-content shortcode, a <strong>title</strong> and <strong>image</strong> and <strong>alt</strong> must be provided in the shortcode markdown. Images must be stored in the same folder: <em>root/themes/phe/static/images/</em>. The <strong>caption</strong> is optional, and should be added when credit to the image owner needs to be provided.</p>
+<h2 id="shortcode-contents">Shortcode Contents</h2>
+<p>Contents within the shortcode tags should be in HTML5. The recommendation is a simple combination of <em>p</em> and heading (<em>h1</em>,<em>h2</em>,<em>h3</em>,etc.) tags. If in doubt, refer to the examples in this document or the ‘covid-19.md’ file.</p>
+<h2 id="button-shortcode">Button Shortcode</h2>
+<p>As included in the spotlight-content example, a button shortcode is also available to be used within either main shortcode. Buttons are self-closing, in that they do not need a closing tag like the other shortcodes. Button shortcodes have the following options:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>text</td>
+<td>The button text <em>(required)</em></td>
+</tr>
+<tr class="even">
+<td>url</td>
+<td>The URL to where the button should link <em>(required)</em></td>
+</tr>
+<tr class="odd">
+<td>external</td>
+<td>Set this to <strong>true</strong> if the linked page should open in a new tab</td>
+</tr>
+<tr class="even">
+<td>icon</td>
+<td>There are two options for the button icon: <strong>external</strong> or <strong>arrow</strong></td>
+</tr>
+</tbody>
+</table>
