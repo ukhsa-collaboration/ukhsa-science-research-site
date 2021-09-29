@@ -10545,6 +10545,32 @@ p {
   font-size: 0.75em;
   padding-top: .5rem; }
 
+.cookie-banner {
+  background-color: #20c997;
+  color: white;
+  font-size: 14px;
+  padding: 20px;
+  padding-right: 60px;
+  position: relative;
+  display: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .cookie-banner .cookie-banner__close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: none; }
+    .cookie-banner .cookie-banner__close svg {
+      height: 20px;
+      width: 20px; }
+      .cookie-banner .cookie-banner__close svg path {
+        fill: white; }
+  .cookie-banner.is-active {
+    display: block; }
+
 .cta {
   background-color: #F5F6F7;
   border-top: 9px solid #00B092;

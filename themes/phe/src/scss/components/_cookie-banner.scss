@@ -1,0 +1,32 @@
+.cookie-banner {
+  background-color: $teal;
+  color: white;
+  font-size: 14px;
+  padding: 20px;
+  padding-right: 60px;
+  position: relative;
+  display: none;
+  transition: all 0.2s ease;
+
+  .cookie-banner__close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: none;
+
+    svg {
+      height: 20px;
+      width: 20px;
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  &.is-active {
+    display: block;
+  }
+}

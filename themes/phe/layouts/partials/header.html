@@ -1,19 +1,46 @@
 <header id="site-header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid container-fluid--nav pt-2 pb-2">
-            <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-                <img src="/logo.png" alt="Public Health England.">
-            </a>
+  <div class="cookie-banner">
+    <p>
+      <strong>Notice:</strong> From the 1st October 2021, PHE will transfer its
+      health protection functions into the UK Health Security Agency (UKHSA).
+      The PHE research website and research portal will remain accessible whilst
+      the work to re-brand them is underway
+    </p>
+    <button class="cookie-banner__close">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
+      </svg>
+    </button>
+  </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid container-fluid--nav pt-2 pb-2">
+      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+        <img src="/logo.png" alt="Public Health England." />
+      </a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                {{ partial "main-nav" . }}
-            </div>
-        </div>
-    </nav>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        {{ partial "main-nav" . }}
+      </div>
+    </div>
+  </nav>
 </header>
