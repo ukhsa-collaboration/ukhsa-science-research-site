@@ -139,7 +139,7 @@ const images = () =>
 // Watches all .scss, .js and .html changes and executes the corresponding task
 function watchFiles() {
   browserSync.init({
-    proxy: "http://localhost/phe/",
+    proxy: "http://localhost:1313/",
     ghostMode: false,
   });
 
