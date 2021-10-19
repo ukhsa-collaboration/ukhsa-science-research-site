@@ -1,6 +1,6 @@
-baseURL = "https://research.phe.gov.uk/"
+baseURL = "https://research.ukhsa.gov.uk/"
 languageCode = "en-us"
-title = "Public Health England"
+title = "UK Health Security Agency"
 theme = "phe"
 
 [menu]
