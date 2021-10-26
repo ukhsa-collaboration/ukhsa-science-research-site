@@ -1,4 +1,4 @@
-# Quick Reference Guide for the 'PHE Research website'
+# Quick Reference Guide for the 'UKHSA Research website'
 
 ## Table of contents
  * [Git Clone](#git-clone)
@@ -11,7 +11,7 @@
  * [Button Shortcode](#button-shortcode)
 
 ## Git Clone
-In order to modify the site files, you should clone the site onto your local machine from the repository here: https://github.com/publichealthengland/science-research-site.
+In order to modify the site files, you should clone the site onto your local machine from the repository here: https://github.com/publichealthengland/ukhsa-science-research-site.
 
 We recommend using Git GUI software such as SourceTree, GitHub Desktop, or Tower.
 
