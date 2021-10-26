@@ -1,4 +1,4 @@
-# science-research-site
-source repo to generate "Research at PHE" site: https://research.phe.gov.uk/
+# ukhsa-science-research-site
+source repo to generate "Research at UKHSA" site: https://research.ukhsa.gov.uk/
 
 see [docs/QuickReferenceGuide.md]

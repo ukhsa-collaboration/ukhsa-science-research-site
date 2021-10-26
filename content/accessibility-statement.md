@@ -5,7 +5,7 @@ draft: false
 weight: 6
 ---
 
-This is an accessibility statement from Public Health England and applies to [https://research.phe.gov.uk/](https://research.phe.gov.uk/)
+This is an accessibility statement from Public Health England and applies to [https://research.ukhsa.gov.uk/](https://research.ukhsa.gov.uk/)
 
 #### Technical information about this website’s accessibility
 
@@ -25,7 +25,7 @@ This website is designed to be used by as many people as possible. You should be
 - zoom in up to 200% without the text spilling off the screen
  
 #### Reporting accessibility problems with this website
-[Contact us](https://research.phe.gov.uk/contact/) if you find any problems that are not listed on this page, you think we’re not meeting the accessibility requirements or if you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille.
+[Contact us](https://research.ukhsa.gov.uk/contact/) if you find any problems that are not listed on this page, you think we’re not meeting the accessibility requirements or if you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille.
 
 We'll consider your request and get back to you in 7 days.
  
