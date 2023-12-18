@@ -31,6 +31,10 @@
     <!-- https://github.com/coliff/bootstrap-ie11/issues/39 -->
     <script nomodule src="https://cdn.jsdelivr.net/npm/element-qsa-scope@1.1.0/index.min.js"></script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCCC5WQK3H"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-VCCC5WQK3H'); </script>
+
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
