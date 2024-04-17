@@ -1,7 +1,7 @@
 ---
 title: "Sunlight and Cardiovascular Disease"
 date: 2024-04-03T14:00:00Z
-draft: false
+draft: true
 type: "spotlight"
 thumbnail: "sunlight.jpg"
 alt: "Sun shinning through clouds."
