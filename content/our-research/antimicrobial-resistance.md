@@ -1,5 +1,5 @@
 ---
-title: "Antimicroial Resistance"
+title: "Antimicrobial Resistance"
 date: 2024-03-08T09:24:00Z
 draft: false
 type: "spotlight"
