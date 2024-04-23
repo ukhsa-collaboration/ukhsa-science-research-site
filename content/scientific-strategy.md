@@ -5,6 +5,5 @@ draft: false
 type: "scientific-strategy"
 menu: "footer"
 weight: 9
-
 ---
 

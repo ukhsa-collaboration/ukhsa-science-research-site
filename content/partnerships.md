@@ -5,6 +5,5 @@ draft: false
 type: "partnerships"
 menu: "footer"
 weight: 3
-
 ---
 
