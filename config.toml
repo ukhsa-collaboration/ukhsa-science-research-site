@@ -34,8 +34,4 @@ theme = "phe"
     name = "Contact us"
     url = "/contact/"
     weight = 7
-  [[menu.main]]
-    name = "Divisions"
-    url = "/divisions/"
-    parent = "our-research"
-    weight = 8
+
