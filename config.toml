@@ -5,16 +5,16 @@ theme = "phe"
 
 [menu]
   [[menu.main]]
-    name = "About research"
+    name = "About Research"
     url = "/about/"
     weight = 1
   [[menu.main]]
-    name = "Our research"
+    name = "Our Research"
     url = "/our-research/"
     identifier = "our-research"
     weight = 2
   [[menu.main]]
-    name = "Our research"
+    name = "Our Research"
     url = "/our-research/"
     parent = "our-research"
     weight = 3
@@ -23,15 +23,15 @@ theme = "phe"
     url = "/partnerships/"
     weight = 4
   [[menu.main]]
-    name = "Research opportunities"
+    name = "Research Opportunities"
     url = "/opportunities/"
     weight = 5
   [[menu.main]]
-    name = "Research integrity"
+    name = "Research Integrity"
     url = "/research-integrity/"
     weight = 6
   [[menu.main]]
-    name = "Contact us"
+    name = "Contact Us"
     url = "/contact/"
     weight = 7
 #  [[menu.main]]
