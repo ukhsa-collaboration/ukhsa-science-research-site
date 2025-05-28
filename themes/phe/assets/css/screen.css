@@ -3772,7 +3772,7 @@ textarea.form-control-lg {
   top: 100%;
   z-index: 1000;
   display: none;
-  min-width: 34rem;
+  min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0;
   font-size: 1rem;
