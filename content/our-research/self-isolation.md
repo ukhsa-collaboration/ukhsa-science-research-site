@@ -25,9 +25,6 @@ buttonText: "Learn more about the impact of self-isolation on psychological well
 
 <p>The review was delivered by the National Institute for Health and Care Research (NIHR) <a href="https://epr.hpru.nihr.ac.uk/" target="_blank">Emergency Preparedness and Response at King’s College London</a>, a collaboration between UKHSA, King’s College London and the University of East Anglia.</p>
 
-
-<p>The review was delivered by the National Institute for Health and Care Research (NIHR) <a href="https://epr.hpru.nihr.ac.uk/" target="_blank">Emergency Preparedness and Response at King’s College London</a>, a collaboration between UKHSA, King’s College London and the University of East Anglia.</p>
-
 <p>A further rapid review investigated <a href="https://pubmed.ncbi.nlm.nih.gov/32334182/" target="_blank">how to improve adherence to quarantine</a>. These reviews were subsequently updated to address adherence to self-isolation during the COVID-19 pandemic and whether self-isolation affected wellbeing (see further reading).</p>
 
 <h3 class="red d-none d-lg-block">Further Reading:</h3>
