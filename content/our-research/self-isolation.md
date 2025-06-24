@@ -25,6 +25,9 @@ buttonText: "Learn more about the impact of self-isolation on psychological well
 
 <p>The review was delivered by the National Institute for Health and Care Research (NIHR) <a href="https://epr.hpru.nihr.ac.uk/" target="_blank">Emergency Preparedness and Response at King’s College London</a>, a collaboration between UKHSA, King’s College London and the University of East Anglia.</p>
 
+
+<p>The review was delivered by the National Institute for Health and Care Research (NIHR) <a href="https://epr.hpru.nihr.ac.uk/" target="_blank">Emergency Preparedness and Response at King’s College London</a>, a collaboration between UKHSA, King’s College London and the University of East Anglia.</p>
+
 <p>A further rapid review investigated <a href="https://pubmed.ncbi.nlm.nih.gov/32334182/" target="_blank">how to improve adherence to quarantine</a>. These reviews were subsequently updated to address adherence to self-isolation during the COVID-19 pandemic and whether self-isolation affected wellbeing (see further reading).</p>
 
 <h3 class="red d-none d-lg-block">Further Reading:</h3>
@@ -89,6 +92,7 @@ buttonText: "Learn more about the impact of self-isolation on psychological well
 
 <p>
   <i>Experiences of Using Online Support Groups for Long Covid (part of Freya Mills' UKHSA PhD):</i>
+  <br>
   <a href="https://www.nature.com/articles/s44271-025-00217-6" target="_blank">
     A mixed studies systematic review on the health and wellbeing effects, and underlying mechanisms, of online support groups for chronic conditions
   </a>
