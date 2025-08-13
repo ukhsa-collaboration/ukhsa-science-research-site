@@ -10,4 +10,5 @@ draft: false
  * [Evidence gap map Health equity impacts of climate change](/evidence-gap-map-health-equity-impacts-of-climate-change/)
  * [Evidence gap map communication strategies during an infectious disease incident](/evidence-gap-map-communication-strategies-during-an-infectious-disease-incident/)
  * [Evidence gap map Public Health and Social Measures](/evidence-gap-map-public-health-and-social-measures/)
+ * [Evidence gap map Oropouche Virus](/evidence-gap-map-oropouche-virus/)
 
