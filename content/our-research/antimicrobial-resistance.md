@@ -16,7 +16,7 @@ buttonText: "Learn more about UKHSA Innovations in Antimicrobial Resistance"
 <p>An understanding of chemistry, microbiology, biochemistry and other subjects is necessary for this research to be successful. Traditionally, metabolites (the end product of metabolism) and bacteriophage (viruses that selectively kill bacteria) are tested against pathogenic bacteria, fungi and viruses, to see if they could be an effective treatment. If the metabolite or bacteriophage is successful, then further testing is conducted to examine toxicity, likelihood of resistance emergence and the mechanism of action.</p>
 
 <p>Some of this work has been supported by grants from the <a href="https://www.nihr.ac.uk/" target="_blank" style="color:white;">National Institute for Health and Care Research (NIHR)</a> and other external sources. We continue to develop some of our more promising antimicrobials (antiseptics, disinfectants and antibiotics) through working with a variety of partners across government and in universities. We are in discussion with external funders about using some of the models developed on the project to directly support further antimicrobial discovery and evaluation projects.</p>
-
+<p><a style="color:white;" href="https://researchportal.ukhsa.gov.uk/en/persons/charlotte-hind" target="_blank">Author: Charlotte Hind; UKHSA Research Profile</a></p>
 {{< /spotlight-feature >}}
 
 {{< spotlight-content title="Antimicrobial Resistance and the Burden on Public Health" image="amrbacteriophage.jpg" alt="Antimicrobial resistance" caption="Bacteriophage" >}}
