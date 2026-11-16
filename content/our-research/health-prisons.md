@@ -7,6 +7,7 @@ thumbnail: "thumbnail-vaccine.png"
 alt: "Health-Equity-Prisons."
 description: "Research into improving the health of prison populations in Europe by improving vaccine literacy and uptake"
 excerpt: "Research into improving the health of prison populations in Europe by improving vaccine literacy and uptake"
+buttonText: "Learn more"
 ---
 
 {{<spotlight-feature 
